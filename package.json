@@ -1,0 +1,23 @@
+{
+    "name": "discourse-syntax-highlighting",
+    "displayName": "Discourse JS plugin syntax highlighting",
+    "description": " Discourse JS plugin syntax highlighting",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.43.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "grammars": [
+            {
+                "path": "./syntaxes/html-discourse.injection.json",
+                "scopeName": "html-discourse.injection",
+                "injectTo": [
+                    "text.html"
+                ]
+            }
+        ]
+    }
+}
