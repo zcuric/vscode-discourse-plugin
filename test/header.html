@@ -1,4 +1,4 @@
-<script type="text/discourse-plugin" ve>
+<script type="text/discourse-plugin">
   const settings = Discourse.SiteSettings,
     taggingEnabled = settings.tagging_enabled,
     title = settings.title;
@@ -8,4 +8,24 @@
   } else {
     console.log("Ohh nooos! "+title+"Does not allow tagging.")
   }
+</script>
+
+<script type="text/discourse-plugin" version="0.8">
+  api.modifyClass('controller:composer', {
+    actions: {
+      newActionHere() { }
+    }
+  });
+</script>
+
+<script type="text/discourse-plugin" version="0.8.20">
+  const h = require("virtual-dom").h;
+
+  api.createWidget("my-first-widget", {
+    tagName: "div.my-widget",
+
+    html() {
+      return h('h1', "Hello World!");
+    }
+  });
 </script>
