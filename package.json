@@ -1,8 +1,24 @@
 {
-    "name": "discourse-syntax-highlighting",
-    "displayName": "Discourse JS plugin syntax highlighting",
-    "description": " Discourse JS plugin syntax highlighting",
-    "version": "0.0.1",
+    "name": "vscode-discourse-plugin",
+    "displayName": "Discourse JS plugin syntax highlighting (HTML)",
+    "description": " Syntax highlighting support for HTML `<script>` tags using `type=text/discourse-plugin` which is actually javascript.    ",
+    "version": "0.1.0",
+    "author": "Zdravko Ćurić <zcuric@gmail.com>",
+    "keywords": [
+        "html",
+        "script tag",
+        "discourse plugin script tag",
+        "discourse html",
+        "html",
+        "discourse"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/zcuric/vscode-discourse-plugin.git"
+    },
+    "bugs": {
+        "url": "https://github.com/zcuric/vscode-discourse-plugin/issues"
+    },
     "engines": {
         "vscode": "^1.43.0"
     },
@@ -12,11 +28,14 @@
     "contributes": {
         "grammars": [
             {
-                "path": "./syntaxes/html-discourse.injection.json",
-                "scopeName": "html-discourse.injection",
+                "scopeName": "discourse-plugin.injection",
+                "path": "./syntaxes/discourse-plugin.injection.json",
                 "injectTo": [
                     "text.html"
-                ]
+                ],
+                "embeddedLanguages": {
+                    "source.js": "js"
+                }
             }
         ]
     }

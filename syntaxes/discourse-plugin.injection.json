@@ -1,0 +1,70 @@
+{
+  "name": "Discourse plugin",
+  "scopeName": "discourse-plugin.injection",
+  "injectionSelector": "L:text.html.derivative",
+  "patterns": [
+    {
+      "include": "#discourse-plugin"
+    }
+  ],
+  "repository": {
+    "discourse-plugin": {
+      "contentName": "source.js",
+      "name": "meta.embedded.block.html",
+      "begin": "(<)(script)\\b(?=[^>]*type=('text/discourse-plugin'|\"text/discourse-plugin\"))(?![^/>]*/>\\s*$)",
+      "beginCaptures": {
+        "1": {
+          "name": "punctuation.definition.tag.begin.html"
+        },
+        "2": {
+          "name": "entity.name.tag.html"
+        }
+      },
+      "end": "(</)(script)(>)",
+      "endCaptures": {
+        "1": {
+          "name": "punctuation.definition.tag.begin.html"
+        },
+        "2": {
+          "name": "entity.name.tag.html"
+        },
+        "3": {
+          "name": "punctuation.definition.tag.end.html"
+        }
+      },
+      "patterns": [
+        {
+          "include": "#attribute-name"
+        },
+        {
+          "include": "#attribute-value"
+        },
+        {
+          "include": "#source-js"
+        }
+      ]
+    },
+    "source-js": {
+      "begin": "(>)",
+      "beginCaptures": {
+        "1": {
+          "name": "punctuation.definition.tag.end.html"
+        }
+      },
+      "end": "(?=</script>)",
+      "patterns": [
+        {
+          "include": "source.js"
+        }
+      ]
+    },
+    "attribute-name": {
+      "name": "entity.other.attribute-name.html",
+      "match": "\\b([a-zA-Z\\-:_]+)"
+    },
+    "attribute-value": {
+      "name": "string.quoted.double.html, string.quoted.single.html",
+      "match": "(\"|').*?(\"|')"
+    }
+  }
+}

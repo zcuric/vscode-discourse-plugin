@@ -1,0 +1,11 @@
+<script type="text/discourse-plugin" ve>
+  const settings = Discourse.SiteSettings,
+    taggingEnabled = settings.tagging_enabled,
+    title = settings.title;
+
+  if (taggingEnabled) {
+    console.log("Yay! "+title+" has tagging enabled!")
+  } else {
+    console.log("Ohh nooos! "+title+"Does not allow tagging.")
+  }
+</script>
