@@ -3,6 +3,7 @@
     "displayName": "Discourse JS plugin syntax highlighting (HTML)",
     "description": " Syntax highlighting support for HTML `<script>` tags using `type=text/discourse-plugin` which is actually javascript.    ",
     "version": "0.1.0",
+    "publisher": "zcuric",
     "author": "Zdravko Ćurić <zcuric@gmail.com>",
     "keywords": [
         "html",
