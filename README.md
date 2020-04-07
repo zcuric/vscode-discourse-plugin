@@ -2,7 +2,7 @@
 
 [![vs-marketplace
 version](https://badgen.net/vs-marketplace/v/zcuric.vscode-discourse-plugin)](https://marketplace.visualstudio.com/items?itemName=zcuric.vscode-discourse-plugin)
-[![github license](https://badgen.net/github/license/zcuric/vscode-discrouse-plugin)](https://github.com/zcuric/vscode-discrouse-plugin/blob/master/LICENSE)
+[![github license](https://badgen.net/github/license/zcuric/vscode-discourse-plugin)](https://github.com/zcuric/vscode-discourse-plugin/blob/master/LICENSE)
 
 Syntax highlighting support for HTML `<script>` tags using `type="text/discourse-plugin"` which is actually javascript.
 
