@@ -1,7 +1,7 @@
 {
   "name": "Discourse plugin",
   "scopeName": "discourse-plugin.injection",
-  "injectionSelector": "L:text.html.derivative",
+  "injectionSelector": "L:text.html",
   "patterns": [
     {
       "include": "#discourse-plugin"
