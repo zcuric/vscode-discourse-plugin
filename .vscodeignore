@@ -1,4 +1,8 @@
-.vscode/**
-.vscode-test/**
-.gitignore
-vsc-extension-quickstart.md
+# see https://github.com/microsoft/vscode-vsce/issues/12
+*
+**/*
+
+# whitelisted
+!README.md
+!CHANGELOG.md
+!syntaxes/

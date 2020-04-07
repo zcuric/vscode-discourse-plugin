@@ -1,0 +1,12 @@
+# deps
+node_modules
+
+# logs
+logs
+*.log
+
+# artifacts
+*.vsix
+
+# general
+.DS_Store
