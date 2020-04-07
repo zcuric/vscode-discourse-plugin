@@ -1,43 +1,43 @@
 {
-    "name": "vscode-discourse-plugin",
-    "displayName": "Discourse JS plugin syntax highlighting (HTML)",
-    "description": " Syntax highlighting support for HTML `<script>` tags using `type=text/discourse-plugin` which is actually javascript.    ",
-    "version": "0.1.0",
-    "publisher": "zcuric",
-    "author": "Zdravko Ćurić <zcuric@gmail.com>",
-    "keywords": [
-        "html",
-        "script tag",
-        "discourse plugin script tag",
-        "discourse html",
-        "html",
-        "discourse"
-    ],
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/zcuric/vscode-discourse-plugin.git"
-    },
-    "bugs": {
-        "url": "https://github.com/zcuric/vscode-discourse-plugin/issues"
-    },
-    "engines": {
-        "vscode": "^1.43.0"
-    },
-    "categories": [
-        "Programming Languages"
-    ],
-    "contributes": {
-        "grammars": [
-            {
-                "scopeName": "discourse-plugin.injection",
-                "path": "./syntaxes/discourse-plugin.injection.json",
-                "injectTo": [
-                    "text.html"
-                ],
-                "embeddedLanguages": {
-                    "source.js": "js"
-                }
-            }
-        ]
-    }
+  "name": "vscode-discourse-plugin",
+  "displayName": "Discourse JS plugin syntax highlighting (HTML)",
+  "version": "0.1.0",
+  "description": " Syntax highlighting support for HTML `<script>` tags using `type=text/discourse-plugin` which is actually javascript.    ",
+  "categories": [
+    "Programming Languages"
+  ],
+  "keywords": [
+    "html",
+    "script tag",
+    "discourse plugin script tag",
+    "discourse html",
+    "discourse"
+  ],
+  "homepage": "https://github.com/zcuric/vscode-discourse-plugin",
+  "bugs": {
+    "url": "https://github.com/zcuric/vscode-discourse-plugin/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zcuric/vscode-discourse-plugin.git"
+  },
+  "author": "Zdravko Ćurić <zcuric@gmail.com>",
+  "publisher": "zcuric",
+  "contributes": {
+    "grammars": [
+      {
+        "scopeName": "discourse-plugin.injection",
+        "path": "./syntaxes/discourse-plugin.injection.json",
+        "injectTo": [
+          "text.html"
+        ],
+        "embeddedLanguages": {
+          "source.js": "js"
+        }
+      }
+    ]
+  },
+  "engines": {
+    "vscode": "^1.43.0"
+  }
 }
