@@ -1,8 +1,11 @@
 # discourse-plugin-syntax-highlighting
 
-Syntax highlighting support for HTML `<script>` tags using `type=text/discourse-plugin` which is actually javascript.
+[![vs-marketplace version](https://badgen.net/vs-marketplace/v/zcuric.vscode-discourse-plugin)](https://marketplace.visualstudio.com/items?itemName=zcuric.vscode-discourse-plugin)
+
+Syntax highlighting support for HTML `<script>` tags using `type="text/discourse-plugin"` which is actually javascript.
 
 For example
+
 ```html
 <script type="text/discourse-plugin">
   const settings = Discourse.SiteSettings,
